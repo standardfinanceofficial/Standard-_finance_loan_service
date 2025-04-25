@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Standard Finance Loan Application</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      padding: 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    form {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background: #3498db;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #2980b9;
+    }
+
+    .declaration {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>STANDARD FINANCE LOAN APPLICATION</h1>
+  <form action="https://formspree.io/f/mkgrgnky" method="POST">
+    
+    <!-- Applicant Details -->
+    <label>Full Name:</label>
+    <input type="text" name="Full Name" required>
+
+    <label>Date of Birth:</label>
+    <input type="date" name="Date of Birth" required>
+
+    <label>Gender:</label>
+    <input type="text" name="Gender" required>
+
+    <label>Marital Status:</label>
+    <input type="text" name="Marital Status" required>
+
+    <label>National ID / Passport No:</label>
+    <input type="text" name="ID Number" required>
+
+    <label>Phone Number:</label>
+    <input type="tel" name="Phone Number" required>
+
+    <label>Email Address:</label>
+    <input type="email" name="Email" required>
+
+    <label>Residential Address:</label>
+    <input type="text" name="Residential Address" required>
+
+    <label>Employment Status:</label>
+    <select name="Employment Status" required>
+      <option value="">--Select--</option>
+      <option value="Employed">Employed</option>
+      <option value="Self-Employed">Self-Employed</option>
+      <option value="Unemployed">Unemployed</option>
+    </select>
+
+    <label>Monthly Income:</label>
+    <input type="number" name="Monthly Income" required>
+
+    <!-- Loan Details -->
+    <label>Loan Amount Requested:</label>
+    <input type="number" name="Loan Amount Requested" required>
+
+    <label>Loan Purpose:</label>
+    <input type="text" name="Loan Purpose" required>
+
+    <label>Preferred Repayment Period:</label>
+    <input type="text" name="Repayment Period" required>
+
+    <!-- Banking Details -->
+    <label>Bank Name:</label>
+    <input type="text" name="Bank Name" required>
+
+    <label>Account Name:</label>
+    <input type="text" name="Account Name" required>
+
+    <label>Account Number:</label>
+    <input type="text" name="Account Number" required>
+
+    <!-- Declaration -->
+    <div class="declaration">
+      <label>
+        <input type="checkbox" required>
+        I hereby declare that the information provided is true and complete. I authorize Standard Finance to verify the information and use it for loan assessment purposes.
+      </label>
+    </div>
+
+    <button type="submit">Submit Application</button>
+  </form>
+</body>
+  </html>
